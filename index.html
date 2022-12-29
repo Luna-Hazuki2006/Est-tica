@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="icon" type="image/x-icon" href="assets/dreamy.ico">
+        <title>Proyecto Estético</title>
+        <style>
+            .primer_enlace:link {
+                color: green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            .primer_enlace:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            .primer_enlace:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            .primer_enlace:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            .enlace_boton:link, a:visited {
+                background-color: #f44336;
+                color: white;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .enlace_boton:hover, a:active {
+                background-color: red;
+            }
+            .ventana {
+                background-image: url('assets/ventana.jpg');
+                background-repeat: no-repeat;
+            }
+            .habitacion {
+                background-image: url('assets/dreamcore_habitacion.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .pasillo {
+                background-image: url('assets/dreamcore_pasillo.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Esta sección es para las cabeceras -->
+        <h1 title="Es el título más importante">Hola 1</h1>
+        <h2>Hola 2</h2>
+        <h3>Hola 3</h3>
+        <h4>Hola 4</h4>
+        <h5>Hola 5</h5>
+        <h6>Hola 6</h6>
+        <h1 style="font-size:60px;">Título 1 con mayor tamaño</h1>
+        <hr>
+        <!-- Esta sección es para los párrafos -->
+        <p>Un párrafo bonito</p>
+        <p>Otro párrafo bonito</p>
+        <p>
+            Este párrafo
+            tiene varias líneas
+            pero HTML lo ignora
+        </p>
+        <p>La siguiente línea anterior es para separar temas</p>
+        <p>Esto es un párrafo <br> con una separación de líneas</p>
+        <p>
+            Tan bello es el Sol
+            
+            tan bella es la Luna
+
+            a alguien como tú
+
+            no la cambio por ninguna
+        </p>
+        <pre>
+            Tan bello es el Sol
+
+            tan bella es la Luna
+
+            a alguién como tú
+
+            no la cambio por ninguna
+        </pre>
+        <hr>
+        <!-- Esta secci�n es para los estilos -->
+        <h1 style="background-color:powderblue;">Esto es un título muy bonito</h1>
+        <p style="background-color:tomato;">Esto es un párrafo muy bonito</p>
+        <h1 style="color:blue;">Título colorido</h1>
+        <p style="color:red;">Párrafo colorido</p>
+        <h1 style="font-family:verdana;">Otro título bonito</h1>
+        <p style="font-family:courier;">Otro párrafo bonito</p>
+        <h1 style="font-size:300%;">Un título grandecito</h1>
+        <p style="font-size:160%;">Un parrafito grandecito</p>
+        <h1 style="text-align:center;">Un título bien centrado</h1>
+        <p style="text-align:center;">Un párrafo bien centrado</p>
+        <hr>
+        <!-- Esta sección es para los formatos -->
+        <b>Este texto está en negrita pero no es tan importante</b>
+        <br>
+        <strong>¿Este texto está en negrita y es de gran importancia!</strong>
+        <br>
+        <i>Este texto está itálico</i>
+        <br>
+        <em>Este texto está emfatizado</em>
+        <br>
+        <small>Este texto es pequeñito</small>
+        <p>No te olvides de comprar <mark>flores</mark> para la celebraci�n</p>
+        <p>Me gustaría que compraras <del>belladonas</del> margaritas</p>
+        <p>Me gustaría que les dieras <del>daturas</del> <ins>rosas<ins></p>
+        <p>Este <sub>subíndice</sub> es parte del texto</p>
+        <p>Este <sup>superíndice</sup> es parte del texto</p>
+        <hr>
+        <!-- Esta sección es para las citaciones -->
+        <p>Esta es una cita de la Fundación:</p>
+        <blockquote cite="http://lafundacionscp.wikidot.com/i-57-hub">
+            No estamos de acuerdo con el universo.
+
+            La humanidad no tiene que volver a esconderse con miedo. 
+            Nadie más que nosotros los podemos proteger, 
+            pero necesitamos que nos ayuden en esta campaña.
+        </blockquote>
+        <br>
+        <p>El propósito de la Fundación es: <q>Seguridad. Contención. Protección</q></p>
+        <p>La Fundación <abbr title="Seguridad. Contención. Protección.">SCP</abbr> se encargará de esto</p>
+        <br>
+        <address>
+            Escrito por Luna Hazuki<br>
+            Visítenme en:<br>
+            Venezuela, Lara, Barquisimeto<br>
+            Plaza Madrid, piso 9
+        </address>
+        <br>
+        <p>Un buen ejemplo es: <cite>Nunca lo Hubiera Dicho</cite>, un libro de la Real Académia Española</p>
+        <br>
+        <bdo dir="rtl">Probablemente necesites un espejo para leer esto</bdo>
+        <hr>
+        <!-- Esta sección es para los comentarios -->
+        <!-- Aquí esta un comentario muy bonito -->
+        <!-- El siguiente párrafo esta muy bonito -->
+        <p>Hay muchos comentarios <!-- Aquí :3 --> en esta sección y códigos escondidos</p>
+        <!-- 
+            <h1>�Bienvenidos a la secci�n de comentarios!</h1>
+            <p>Este texto es muy bonito pero nadie lo sabe</p>
+        -->
+        <hr>
+        <!-- Esta secci�n es para los colores -->
+        <h1 id="colores" style="background-color:DodgerBlue;">Hola a todos :D</h1>
+        <p style="background-color:Tomato;">Espero que todos tengan un hermoso d�a :3</p>
+        <h1 style="color:Tomato;">Hola de nuevo :D</h1>
+        <p style="color:DodgerBlue;">�Un cambio de estilo?</p>
+        <p style="color:MediumSeaGreen;">�Puedes apostar que lo es!</p>
+        <h1 style="border:2px solid Tomato;">Hola a todos :D</h1>
+        <h1 style="border:2px solid DodgerBlue;">Hola a todos :3</h1>
+        <h1 style="border:2px solid Violet;">Hola a todos ;)</h1>
+        <h1 style="background-color:rgb(255, 99, 71);">El color tomate en rgb</h1>
+        <h1 style="background-color:#ff6347;">El color tomate en hex</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%);">El color tomate en hsl</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">El color tomate 50% trasparente en rgba</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">El color tomate 50% trasparente en hsla</h1>
+        <hr>
+        <!-- Esta secci�n es para los colores RGB y RGBA -->
+        <h1>Colores en rgb</h1>
+        <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+        <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+        <h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+        <h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+        <h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+        <h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+        <h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+        <h1>Sombras de gris en rgb</h1>
+        <h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+        <h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+        <h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+        <h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+        <h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+        <h1>Colores trasparentes en rgba</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+        <hr>
+        <!-- Esta secci�n es para los colores en HEX -->
+        <h1>Colores en hex</h1>
+        <h1 style="background-color:#ff0000;">#ff0000</h1>
+        <h1 style="background-color:#0000ff;">#0000ff</h1>
+        <h1 style="background-color:#3cb371;">#3cb371</h1>
+        <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+        <h1 style="background-color:#ffa500;">#ffa500</h1>
+        <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+        <h1>Sombras de gris en hex</h1>
+        <h1 style="background-color:#ff0000;">#ff0000</h1>
+        <h1 style="background-color:#0000ff;">#0000ff</h1>
+        <h1 style="background-color:#3cb371;">#3cb371</h1>
+        <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+        <h1 style="background-color:#ffa500;">#ffa500</h1>
+        <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+        <hr>
+        <!-- Esta secci�n es para los colores en HSL y HSLA -->
+        <h1>Colores en hsl</h1>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+        <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+        <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+        <h1>Colores con saturaci�n en hsl</h1>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+        <h1>Colores con claridad en hsl</h1>
+        <h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+        <h1>Sombras de gris en hsl</h1>
+        <h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+        <h1>Colores con transparencia en hsla</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+        <hr>
+        <!-- Esta secci�n es para el CSS -->
+        <h1 style="color:blue;">Un t�tulo azulado</h1>
+        <p style="color:red;">Un p�rrafo rojizo</p>
+        <h1 style="color:blue; font-family:verdana; font-size:300%">Un t�tulo con estilo</h1>
+        <p style="color:red; font-family:courier"; font-size:160%>Un p�rrafo con estilo</p>
+        <p style="border:2px solid powderblue;">Un p�rrafo con borde estilado</p>
+        <hr>
+        <!-- Esta secci�n es para los enlaces -->
+        <a href="https://youtu.be/dQw4w9WgXcQ">Algo muy inspirador</a>
+        <br>
+        <a href="https://aesthetics.fandom.com/wiki/After_Hours" target="_self">Algo muy inspirador en tu pesta�a</a>
+        <br>
+        <a href="https://aesthetics.fandom.com/wiki/Dark_Paradise" target="_blank">Algo muy inspirador en una nueva pesta�a</a>
+        <br>
+        <a href="https://aesthetics.fandom.com/wiki/Traumacore" target="_parent">Algo muy inspirador en parte de tu pesta�a</a>
+        <br>
+        <a href="https://aesthetics.fandom.com/wiki/Cozy_Childhood_Hideaway" target="_top">Algo muy inspirador encima de tu pesta�a</a>
+        <br>
+        <a href="https://aesthetics.fandom.com/wiki/Dreamcore">
+            <img src="assets/Dreamcore.jpg" alt="Una imagen on�rica" style="width:42px; height:42px;">
+        </a>
+        <br>
+        <a href="mailto:anapaulamendozadiaz2006@gmail.com">M�ndame un correo :3</a>
+        <br>
+        <button onclick="document.location='assets/Dreamcore.jpg'">�Te puedo llevar a un sue�o!</button>
+        <br>
+        <a href="assets/Liminal_space.jpg" title="Un espacio liminal pac�fico">�Visita un lugar vac�o!</a>
+        <hr>
+        <!-- Esta secci�n es para los colores de los enlaces -->
+        <a class="primer_enlace" href="assets/Se�or_de_los_pollos.jpg" target="_blank">Una foto del se�or de los pollos uwu</a>
+        <br>
+        <a class="enlace_boton" href="assets/Gustavo_fring.jpg" target="_blank">Otra foto del se�or de los pollos owo</a>
+        <hr>
+        <!-- Esta secci�n es para los enlaces marcalibros -->
+        <a href="#colores">Ve a la parte de colores :3</a>
+        <br>
+        <a href="https://es.wikipedia.org/wiki/Brugmansia#toc">Lee sobre una flor muy bonita :3</a>
+        <hr>
+        <!-- Esta secci�n es para las im�genes -->
+        <img src="assets/Brugmansia.jpg" alt="La flor Brugmansia" width="300" height="400">
+        <img src="assets/Datura.jpg" alt="La flor Datura" style="width:300px;height:400px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Hyoscyamus_niger_0002.JPG" alt="La flor Henbane" style="width:300px;height:400px;">
+        <img src="assets/Seraphinianus.gif" alt="Plantas del Codex Seraphinianus" style="width:300px;height:400px;"
+        <a href="https://es.wikipedia.org/wiki/Atropa_belladonna">
+            <img src="assets/Atropa_Belladonna.jpg" alt="La flor de Belladona" style="width:300px;height:400px;">
+        </a>
+        <p>
+            <img src="assets/tea.jpg" alt="T� de floreal" style="float:right;width:45px;height:45px;">
+            A la derecha podr�s ver un t� flotante de flores
+        </p>
+        <p>
+            <img src="assets/tea_cloud.jpg" alt="T� con flores en las nubes" style="float:left;width:45px;height:45px;">
+            A la izquierda podr�s ver un t� flotante de nubes con flores
+        </p>
+        <br>
+        <hr>
+        <!-- Esta secci�n es para los mapas de im�genes -->
+        <img src="assets/Better_Call_Saul.jpg" alt="Better Call Saul Personajes" style="width:800px;" usemap="#BetterCallSaulMap">
+        <map name="BetterCallSaulMap">
+            <area shape="rect" coords="20, 100, 100, 550" href="https://en.wikipedia.org/wiki/Gus_Fring">
+            <area shape="rect" coords="110, 100, 230, 550" href="https://en.wikipedia.org/wiki/Mike_Ehrmantraut">
+            <area shape="rect" coords="240, 60, 350, 550" href="https://en.wikipedia.org/wiki/Saul_Goodman" onclick="Saul()">
+            <area shape="rect" coords="360, 80, 460, 550" href="https://en.wikipedia.org/wiki/Kim_Wexler">
+            <area shape="rect" coords="470, 80, 550, 550" href="https://en.wikipedia.org/wiki/Howard_Hamlin">
+            <area shape="rect" coords="560, 80, 630, 550" href="https://en.wikipedia.org/wiki/Lalo_Salamanca">
+            <area shape="rect" coords="640, 130, 750, 550" href="https://en.wikipedia.org/wiki/Nacho_Varga">
+        </map>
+        <script>const Saul = () => {alert("And remember, better call Saul!")}</script>
+        <hr>
+        <!-- Esta secci�n es para las im�genes de fondo -->
+        <p style="background-image: url('assets/dreamcore_sala.jpg');">
+            Una hermosa idea uwu<br><br>
+            �No te gustar�a descansar un poco?<br><br>
+            en una hermosa sala<br><br>
+            cuando la Luna es nueva<br><br>
+            Dondo no sabes donde es el cielo<br><br>
+            o el agua estelar<br><br>
+            lleno de nubes<br><br>
+            con unas escaleras muy elegantes<br><br>
+            donde puedes hacer lo que quieras<br><br>
+            vestir como quieras<br><br>
+            comer lo que quieras<br><br>
+            incluso podr�as decorarla<br><br>
+            podr�as explorarla<br><br>
+            dormir en por el tiempo que tu quieras<br><br>
+            jugar con las nubes<br><br>
+            disfrutar de la vista del cielo<br><br>
+            disfrutar de la vista del agua<br><br>
+            dejar que el tiempo siga y siga<br><br>
+            hasta perder la noci�n de el mismo<br><br>
+            hasta sentirte parte de la sala<br><br>
+            pero que pac�fico ser�a �verdad?<br><br>
+            una sala solo para t�<br><br>
+            Todo muy est�tico y bonito owo
+        </p>
+        <p class="ventana">
+            �Una ventana?<br>
+            �A d�nde llevar�?<br>
+            Podr�a llevarte...<br>
+            a tus sue�os<br>
+            o a otra dimensi�n<br>
+            o al para�so<br>
+            �quieres ver?
+        </p>
+        <p class="habitacion">
+            Una hermosa habitaci�n<br><br>
+            Un poco lugubre<br><br>
+            Y �borrosa?<br><br>
+            Ser� que...<br><br>
+            �Has estado aqu� antes?<br><br>
+            que misterioso...<br><br>
+            �qu� habr� pasado?<br><br>
+            Bueno...<br><br>
+            Eso ya no importa tanto<br><br>
+            Al fin y al cabo<br><br>
+            Estas a punto de comprarla<br><br>
+            Y ser�s el due�o oficial<br><br>
+            Nadie te la podr� quitar<br><br>
+            Nadie podr� estar en ella<br><br>
+            a menos que t� quieras<br><br>
+            de ahora en adelante<br><br>
+            este ser� un lugar segura<br><br>
+            un lugar feliz<br><br>
+            adem�s tiene un color bonito uwu
+        </p>
+        <p class="pasillo">
+            Imagina volver aqu�<br><br>
+            poder caminar por aqu�<br><br>
+            como la primera vez<br><br>
+            casi se siente irreal<br><br>
+            como un sue�o<br><br>
+            pero eso no cambia que es...<br><br>
+            real<br><br>
+            recuerdas los sonidos<br><br>
+            los olores<br><br>
+            la vista de todo<br><br>
+            como la �ltima vez<br><br>
+            recuerdas el agua<br><br>
+            ese aire distinto<br><br>
+            una memoria bastante preciada<br><br>
+            hermosa en su forma �nica<br><br>
+            y ahora por fin...<br><br>
+            puedes volver a ella
+        </p>
+        <hr>
+        <!-- Esta secci�n es para las fotograf�as -->
+        <picture>
+            <source media="(min-width: 650px)" srcset="assets/dream.jpg">
+            <source media="(min-width: 565px)" srcset="assets/estetico.jpg">
+            <img src="assets/accidente.jpg">
+        </picture>
+        <br>
+        <picture>
+            <source srcset="assets/hello_kitty.png">
+            <source srcset="assets/hello_kitty.jpg">
+            <img src="assets/dreamcore.gif" alt="Hello Kitty dice hola uwu" style="width:auto;">
+        </picture>
+        <hr>
+        <!-- Esta secci�n es para los favicones -->
+        <img src="assets/dreamy.ico">
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
