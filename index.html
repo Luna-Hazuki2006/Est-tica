@@ -51,6 +51,46 @@
                 background-attachment: fixed;
                 background-size: 100% 100%;
             }
+            .bordes {
+                border: 1px solid black;
+            }
+            .lineas {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            .blancos {
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            .detalle {
+                background-color: #96D4D4;
+            }
+            .circular {
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            .puntitos {
+                border-style: dotted;
+            }
+            .palidez {
+                border-style: solid;
+                border-color: #96D4D4;
+            }
+            .izquierda {
+                text-align: left;
+            }
+            .espacio {
+                padding: 5px;
+            }
+            .espaciado {
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+            }
+            .celdas {
+                border-spacing: 30px;
+            }
         </style>
     </head>
     <body>
@@ -114,7 +154,7 @@
         <em>Este texto está emfatizado</em>
         <br>
         <small>Este texto es pequeñito</small>
-        <p>No te olvides de comprar <mark>flores</mark> para la celebraci�n</p>
+        <p>No te olvides de comprar <mark>flores</mark> para la celebración</p>
         <p>Me gustaría que compraras <del>belladonas</del> margaritas</p>
         <p>Me gustaría que les dieras <del>daturas</del> <ins>rosas<ins></p>
         <p>Este <sub>subíndice</sub> es parte del texto</p>
@@ -405,5 +445,399 @@
         <!-- Esta sección es para los favicones -->
         <img src="assets/dreamy.ico">
         <hr>
+        <!-- Esta sección es para las tablas -->
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Contacto</th>
+                <th>País</th>
+            </tr>
+            <tr>
+                <td>Luna Hazuki</td>
+                <td>Cartas</td>
+                <td>Japón</td>
+            </tr>
+            <tr>
+                <td>Levia Barisol</td>
+                <td>Llamadas</td>
+                <td>Rusia</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Sol</td>
+                <td>Luna</td>
+                <td>Estrellas</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Sol</td>
+                <td>Luna</td>
+                <td>Estrellas</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th>Deidad 1</th>
+                <th>Deidad 2</th>
+                <th>Deidad 3</th>
+            </tr>
+            <tr>
+                <td>Sol</td>
+                <td>Luna</td>
+                <td>Estrellas</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Esta sección es para los bordes de las tablas -->
+        <table class="bordes">
+            <tr>
+                <th class="bordes">Solar</th>
+                <th class="bordes">Lunar</th>
+                <th class="bordes">Estelar</th>
+            </tr>
+            <tr>
+                <td class="bordes">Sol</td>
+                <td class="bordes">Luna</td>
+                <td class="bordes">Estrellas</td>
+            </tr>
+            <tr>
+                <td class="bordes">16</td>
+                <td class="bordes">14</td>
+                <td class="bordes">10</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas">
+            <tr>
+                <th class="lineas">Solar</th>
+                <th class="lineas">Lunar</th>
+                <th class="lineas">Estelar</th>
+            </tr>
+            <tr>
+                <td class="lineas">Sol</td>
+                <td class="lineas">Luna</td>
+                <td class="lineas">Estrellas</td>
+            </tr>
+            <tr>
+                <td class="lineas">16</td>
+                <td class="lineas">14</td>
+                <td class="lineas">10</td>
+            </tr>
+        </table>
+        <br>
+        <table class="blancos">
+            <tr>
+                <th class="blancos detalle">Solar</th>
+                <th class="blancos detalle">Lunar</th>
+                <th class="blancos detalle">Estelar</th>
+            </tr>
+            <tr>
+                <td class="blancos detalle">Sol</td>
+                <td class="blancos detalle">Luna</td>
+                <td class="blancos detalle">Estrellas</td>
+            </tr>
+            <tr>
+                <td class="blancos detalle">16</td>
+                <td class="blancos detalle">14</td>
+                <td class="blancos detalle">10</td>
+            </tr>
+        </table>
+        <br>
+        <table class="circular">
+            <tr>
+                <th class="circular">Solar</th>
+                <th class="circular">Lunar</th>
+                <th class="circular">Estelar</th>
+            </tr>
+            <tr>
+                <td class="circular">Sol</td>
+                <td class="circular">Luna</td>
+                <td class="circular">Estrellas</td>
+            </tr>
+            <tr>
+                <td class="circular">16</td>
+                <td class="circular">14</td>
+                <td class="circular">10</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th class="puntitos">Solar</th>
+                <th class="puntitos">Lunar</th>
+                <th class="puntitos">Estelar</th>
+            </tr>
+            <tr>
+                <td class="puntitos">Sol</td>
+                <td class="puntitos">Luna</td>
+                <td class="puntitos">Estrellas</td>
+            </tr>
+            <tr>
+                <td class="puntitos">16</td>
+                <td class="puntitos">14</td>
+                <td class="puntitos">10</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th class="palidez">Solar</th>
+                <th class="palidez">Lunar</th>
+                <th class="palidez">Estelar</th>
+            </tr>
+            <tr>
+                <td class="palidez">Sol</td>
+                <td class="palidez">Luna</td>
+                <td class="palidez">Estrellas</td>
+            </tr>
+            <tr>
+                <td class="palidez">16</td>
+                <td class="palidez">14</td>
+                <td class="palidez">10</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Esta sección es para el tamaño de las tablas -->
+        <table class="bordes" style="width: 100%;">
+            <tr>
+                <th class="bordes">Solar</th>
+                <th class="bordes">Lunar</th>
+                <th class="bordes">Estelar</th>
+            </tr>
+            <tr>
+                <td class="bordes">Helios</td>
+                <td class="bordes">Selena</td>
+                <td class="bordes">Asteria</td>
+            </tr>
+            <tr>
+                <td class="bordes">Titán</td>
+                <td class="bordes">Titánide</td>
+                <td class="bordes">Titánide</td>
+            </tr>
+            <tr>
+                <td class="bordes">60</td>
+                <td class="bordes">55</td>
+                <td class="bordes">1</td>
+            </tr>
+        </table>
+        <br>
+        <table class="bordes" style="width: 100%;">
+            <tr>
+                <th class="bordes" style="width: 70%;">Solar</th>
+                <th class="bordes">Lunar</th>
+                <th class="bordes">Estelar</th>
+            </tr>
+            <tr>
+                <td class="bordes">Helios</td>
+                <td class="bordes">Selena</td>
+                <td class="bordes">Asteria</td>
+            </tr>
+            <tr>
+                <td class="bordes">Titán</td>
+                <td class="bordes">Titánide</td>
+                <td class="bordes">Titánide</td>
+            </tr>
+            <tr>
+                <td class="bordes">60</td>
+                <td class="bordes">55</td>
+                <td class="bordes">1</td>
+            </tr>
+        </table>
+        <br>
+        <table class="bordes" style="width: 100%;">
+            <tr>
+                <th class="bordes">Solar</th>
+                <th class="bordes">Lunar</th>
+                <th class="bordes">Estelar</th>
+            </tr>
+            <tr style="height: 200px;">
+                <td class="bordes">Helios</td>
+                <td class="bordes">Selena</td>
+                <td class="bordes">Asteria</td>
+            </tr>
+            <tr>
+                <td class="bordes">Titán</td>
+                <td class="bordes">Titánide</td>
+                <td class="bordes">Titánide</td>
+            </tr>
+            <tr>
+                <td class="bordes">60</td>
+                <td class="bordes">55</td>
+                <td class="bordes">1</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Esta sección es para las cabeceras de las tablas -->
+        <table class="lineas" style="width: 100%;">
+            <tr>
+                <th class="lineas">Solar</th>
+                <th class="lineas">Lunar</th>
+                <th class="lineas">Estelar</th>
+            </tr>
+            <tr>
+                <td class="lineas">Helios</td>
+                <td class="lineas">Selena</td>
+                <td class="lineas">Asteria</td>
+            </tr>
+            <tr>
+                <td class="lineas">Titán</td>
+                <td class="lineas">Titánide</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas" style="width: 100%;">
+            <tr>
+                <th class="lineas">Solar</th>
+                <td class="lineas">Helios</td>
+                <td class="lineas">Titán</td>
+            </tr>
+            <tr>
+                <th class="lineas">Lunar</th>
+                <td class="lineas">Selena</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+            <tr>
+                <th class="lineas">Estelar</th>
+                <td class="lineas">Asteria</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas" style="width: 100%;">
+            <tr>
+                <th class="lineas izquierda">Solar</th>
+                <th class="lineas izquierda">Lunar</th>
+                <th class="lineas izquierda">Estelar</th>
+            </tr>
+            <tr>
+                <td class="lineas">Helios</td>
+                <td class="lineas">Selena</td>
+                <td class="lineas">Asteria</td>
+            </tr>
+            <tr>
+                <td class="lineas">Titán</td>
+                <td class="lineas">Titánide</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas" style="width: 100%;">
+            <tr>
+                <th class="lineas" colspan="2">Mayor</th>
+                <th class="lineas">Menor</th>
+            </tr>
+            <tr>
+                <td class="lineas">Helios</td>
+                <td class="lineas">Selena</td>
+                <td class="lineas">Asteria</td>
+            </tr>
+            <tr>
+                <td class="lineas">Titán</td>
+                <td class="lineas">Titánide</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas" style="width: 100%;">
+            <caption>Deidades luminosas</caption>
+            <tr>
+                <th class="lineas">Solar</th>
+                <th class="lineas">Lunar</th>
+            </tr>
+            <tr>
+                <td class="lineas">Helios</td>
+                <td class="lineas">Selena</td>
+            </tr>
+            <tr>
+                <td class="lineas">Titán</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Esta sección es para el espaciado de las tablas -->
+        <table class="lineas" style="width: 100%;">
+            <tr>
+                <th class="lineas espacio">Solar</th>
+                <th class="lineas espacio">Lunar</th>
+                <th class="lineas espacio">Estelar</th>
+            </tr>
+            <tr>
+                <td class="lineas espacio">Helios</td>
+                <td class="lineas espacio">Selena</td>
+                <td class="lineas espacio">Asteria</td>
+            </tr>
+            <tr>
+                <td class="lineas espacio">Titán</td>
+                <td class="lineas espacio">Titánide</td>
+                <td class="lineas espacio">Titánide</td>
+            </tr>
+            <tr>
+                <td class="lineas espacio">60</td>
+                <td class="lineas espacio">55</td>
+                <td class="lineas espacio">1</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas" style="width: 100%;">
+            <tr>
+                <th class="lineas espaciado">Solar</th>
+                <th class="lineas espaciado">Lunar</th>
+                <th class="lineas espaciado">Estelar</th>
+            </tr>
+            <tr>
+                <td class="lineas espaciado">Helios</td>
+                <td class="lineas espaciado">Selena</td>
+                <td class="lineas espaciado">Asteria</td>
+            </tr>
+            <tr>
+                <td class="lineas espaciado">Titán</td>
+                <td class="lineas espaciado">Titánide</td>
+                <td class="lineas espaciado">Titánide</td>
+            </tr>
+            <tr>
+                <td class="lineas espaciado">60</td>
+                <td class="lineas espaciado">55</td>
+                <td class="lineas espaciado">1</td>
+            </tr>
+        </table>
+        <br>
+        <table class="lineas celdas" style="width: 100%;">
+            <tr>
+                <th class="lineas">Solar</th>
+                <th class="lineas">Lunar</th>
+                <th class="lineas">Estelar</th>
+            </tr>
+            <tr>
+                <td class="lineas">Helios</td>
+                <td class="lineas">Selena</td>
+                <td class="lineas">Asteria</td>
+            </tr>
+            <tr>
+                <td class="lineas">Titán</td>
+                <td class="lineas">Titánide</td>
+                <td class="lineas">Titánide</td>
+            </tr>
+            <tr>
+                <td class="lineas">60</td>
+                <td class="lineas">55</td>
+                <td class="lineas">1</td>
+            </tr>
+        </table>
     </body>
 </html>
