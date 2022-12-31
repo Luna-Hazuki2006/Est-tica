@@ -136,6 +136,25 @@
             .listas a:hover {
                 background-color: #111111;
             }
+            .ciudad {
+                background-color: tomato;
+                color: white;
+                border: 2px solid black;
+                margin: 20px;
+                padding: 20px;
+            }
+            .nota {
+                font-size: 120%;
+                color: red;
+            }
+            .ciudades {
+                background-color: tomato;
+                color: white;
+                padding: 10px;
+            }
+            .central {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -1435,6 +1454,52 @@
             oh y también una cinta <span style="color: blue; font-weight: bold;">azul</span>.
             Todo para navidad :3
         </p>
+        <hr>
+        <!-- Esta sección es para las clases -->
+        <div class="ciudad">
+            <h2>Caracas</h2>
+            <p>La capital, una ciudad muy concurrida uwu</p>
+        </div>
+        <div class="ciudad">
+            <h2>Barquisimeto</h2>
+            <p>La ciudad de los comerciantes owo</p>
+        </div>
+        <div class="ciudad">
+            <h2>Las demás ciudades</h2>
+            <p>Monte y culebra</p>
+        </div>
+        <h1>Un muy <span class="nota">importante</span> título</h1>
+        <p>Un muy <span class="nota">importante</span> texto</p>
+        <br>
+        <h2 class="ciudades">Caracas</h2>
+        <p>La capital, una ciudad muy concurrida uwu</p>
+        <h2 class="ciudades">Barquisimeto</h2>
+        <p>La ciudad de los comerciantes owo</p>
+        <h2 class="ciudades">Las demás ciudades</h2>
+        <p>Monte y culebra</p>
+        <br>
+        <h2 class="ciudades central">Caracas</h2>
+        <h2 class="ciudades">Barquisimeto</h2>
+        <h2 class="ciudades">Las demás ciudades</h2>
+        <br>
+        <h2 class="ciudades">Caracas</h2>
+        <p class="ciudades">La capital, una ciudad muy concurrida uwu</p>
+        <br>
+        <button onclick="ocultar()">Ocultar ciudades</button>
+        <h2 class="lugar">Caracas</h2>
+        <p>La capital, una ciudad muy concurrida uwu</p>
+        <h2 class="lugar">Barquisimeto</h2>
+        <p>La ciudad de los comerciantes owo</p>
+        <h2 class="lugar">Las demás ciudades</h2>
+        <p>Monte y culebra</p>
+        <script>
+            const ocultar = () => {
+                var x = document.getElementsByClassName("lugar");
+                for (let i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+            };
+        </script>
         <hr>
     </body>
 </html>
