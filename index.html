@@ -1540,5 +1540,51 @@
         <iframe src="" name="desire" height="300px" width="100%" title="mentiras"></iframe>
         <p><a href="https://www.heavensgate.com/book/610.htm" target="desire">¿Quieres ver algo cultista?</a></p>
         <hr>
+        <!-- Esta sección es para el javascript -->
+        <button type="button" onclick="document.getElementById('hora').innerHTML = Date();">¿Qué hora es?</button>
+        <p id="hora"></p>
+        <br>
+        <p id="saludo"></p>
+        <script>
+            document.getElementById('saludo').innerHTML = "¡Saludos por parte de JavaScript! :D";
+        </script>
+        <br>
+        <button type="button" onclick="probar();">Lo mejor de este día...</button>
+        <p id="mejor">¿Qué será?</p>
+        <script>
+            function probar() {
+                document.getElementById("mejor").innerHTML = "¡Lo mejor de este día es que estás aquí!";
+            }
+        </script>
+        <br>
+        <p id="importante">Un super importante :D</p>
+        <button type="button" onclick="importante();">Pero podría ser más importante...</button>
+        <script>
+            function importante() {
+                document.getElementById("importante").style.fontSize = "25px";
+                document.getElementById("importante").style.color = "red";
+                document.getElementById("importante").style.backgroundColor = "yellow";
+            }
+        </script>
+        <br>
+        <img id="yo" src="assets/sonrojada.png" alt="yo :3">
+        <p>
+            <button type="button" onclick="cambiar('sonrojada');">Sonrojada :3</button>
+            <button type="button" onclick="cambiar('enojada');">Enojada >:v</button>
+        </p>
+        <script>
+            function cambiar(actual) {
+                const inicio = "assets/";
+                const final = ".png";
+                document.getElementById("yo").src = inicio + actual + final;
+            }
+        </script>
+        <br>
+        <p id="exclusivo"></p>
+        <script>
+            document.getElementById("exclusivo").innerHTML = "Si puedes ver esto, ¡tienes JavaScript!";
+        </script>
+        <noscript>¡oh no! parece que no tienes JavaScript D:</noscript>
+        <hr>
     </body>
 </html>
