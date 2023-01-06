@@ -173,6 +173,93 @@
                 padding: 40px;
                 text-align: center;
             }
+            #vista1 * {
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #header1 {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            #nav1 {
+                float: left;
+                width: 30%;
+                background: #ccc;
+                padding: 20px;
+            }
+            #nav1 ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            #article1 {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+            }
+            #section1::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            #footer1 {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            #vista2 * {
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #header2 {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            #section2 {
+                display: -webkit-flex;
+                display: flex;
+            }
+            #nav2 {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                background: #ccc;
+                padding: 20px;
+            }
+            #nav2 ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            #article2 {
+                -webkit-flex: 3;
+                -ms-flex: 3;
+                flex: 3;
+                background-color: #f1f1f1;
+                padding: 10px;
+            }
+            #footer2 {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                #nav1, #article1 {
+                    width: 100%;
+                    height: auto;
+                }
+                #section2 {
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
         </style>
     </head>
     <body>
@@ -1598,6 +1685,56 @@
         <img src="/assets/navidad.jfif" alt="navidad" style="width: 500px;">
         <hr>
         <!-- Esta sección es para la etiqueta head -->
-        <!--  -->
+        <hr>
+        <!-- Esta sección es para los diseños -->
+        <div id="vista1">
+            <div id="header1">
+                <h2>Ciudades</h2>
+            </div>
+            <section id="section1">
+                <nav id="nav1">
+                    <ul>
+                        <li><a href="#">Caracas</a></li>
+                        <li><a href="#">Barquisimeto</a></li>
+                        <li><a href="#">Maracaibo</a></li>
+                    </ul>
+                </nav>
+                <article id="article1">
+                    <h1>Caracas</h1>
+                    <p>Es la capital de Venezuela.</p>
+                    <p>Puede ser muy concurrida y peligrosa.</p>
+                </article>
+            </section>
+            <div id="footer1">
+                <p>Pie de página</p>
+            </div>
+        </div>
+        <br>
+        <div id="vista2">
+            <div id="header2">
+                <h2>Ciudades</h2>
+            </div>
+            <section id="section2">
+                <nav id="nav2">
+                    <ul>
+                        <li><a href="#">Caracas</a></li>
+                        <li><a href="#">Barquisimeto</a></li>
+                        <li><a href="#">Maracaibo</a></li>
+                    </ul>
+                </nav>
+                <article id="article2">
+                    <h1>Caracas</h1>
+                    <p>Es la capital de Venezuela.</p>
+                    <p>Puede ser muy concurrida y peligrosa.</p>
+                </article>
+            </section>
+            <div id="footer2">
+                <p>Pie de página</p>
+            </div>
+        </div>
+        <hr>
+        <!-- Esta sección es para el responsive -->
+        <p>Esto es sólo para saber que el viewport esta bien :v</p>
+        
     </body>
 </html>
