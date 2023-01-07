@@ -8,6 +8,7 @@
         <meta name="description" content="Esta es una página para mis prácticas de HTML">
         <meta name="author" content="Luna Hazuki">
         <link rel="icon" type="image/x-icon" href="assets/dreamy.ico">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <title>Proyecto Estético Luna Hazuki</title>
         <style>
             .primer_enlace:link {
@@ -250,6 +251,53 @@
                 text-align: center;
                 color: white;
             }
+            .cajas-cosas * {
+                box-sizing: border-box;
+            }
+            .siniestra {
+                background-color: #2196F3;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+            .centro {
+                background-color: #f1f1f1;
+                padding: 20px;
+                float: left;
+                width: 60%;
+            }
+            .diestra {
+                background-color: #04AA6D;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+            .menu-cambiante {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+            .menu-cambiante a {
+                background-color: #e5e5e5;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+                width: 100%;
+                color: black;
+            }
+            .centro-cambiante {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+            .derecha-cambiante {
+                background-color: #e5e5e5;
+                float: left;
+                width: 20%;
+                padding: 15px;
+                margin-top: 7px;
+                text-align: center;
+            }
             @media (max-width: 600px) {
                 #nav1, #article1 {
                     width: 100%;
@@ -258,6 +306,16 @@
                 #section2 {
                     -webkit-flex-direction: column;
                     flex-direction: column;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .siniestra, .centro, .diestra {
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 620px) {
+                .menu-cambiante, .centro-cambiante, .derecha-cambiante {
+                    width: 100%;
                 }
             }
         </style>
@@ -601,7 +659,7 @@
         <!-- Esta sección es para las fotografías -->
         <picture>
             <source media="(min-width: 650px)" srcset="assets/dream.jpg">
-            <source media="(min-width: 565px)" srcset="assets/estetico.jpg">
+            <source media="(min-width: 465px)" srcset="assets/estetico.jpg">
             <img src="assets/accidente.jpg">
         </picture>
         <br>
@@ -1735,6 +1793,97 @@
         <hr>
         <!-- Esta sección es para el responsive -->
         <p>Esto es sólo para saber que el viewport esta bien :v</p>
+        <br>
+        <img src="assets/candelabro.jpg" alt="candelabro onírico" style="width:100%;">
+        <br>
+        <img src="assets/candelabro_bi.jpg" alt="candelabro bi ;3" style="max-width: 100%; height: auto;">
+        <br>
+        <picture>
+            <source media="(max-width: 600px)" srcset="assets/ventana_sueño.jpg">
+            <source media="(max-width: 1500px)" srcset="assets/bebidas.webp">
+            <source srcset="assets/invierno.jpg">
+            <img src="assets/rosas.png" alt="Un mundo brillante y onírico" style="width: auto;">
+        </picture>
+        <br>
+        <h1 style="font-size: 10vw;">Un título muy cambiante :3</h1>
+        <p style="font-size: 5vw;">Este texto también es cambiente :D</p>
+        <p style="font-size: 5vw;">¡Y este también ^_^!</p>
+        <br>
+        <div class="cajas-cosas">
+            <div class="siniestra">
+                <p>Los colores de </p>
+            </div>
+            <div class="centro">
+                <p>una bandera la cual </p>
+            </div>
+            <div class="diestra">
+                <p>no me acuerdo el nombre :'v</p>
+            </div>
+        </div>
+        <br>
+        <div class="cajas-cosas">
+            <div style="background-color: #e5e5e5; padding: 15px; text-align: center;">
+                <h1>Hola a todos :3</h1>
+            </div>
+            <div style="overflow: auto;">
+                <div class="menu-cambiante">
+                    <a href="#">Hola :p</a>
+                    <a href="#">¿Qué haces?</a>
+                    <a href="#">¿Cómo te ha ido?</a>
+                    <a href="#">¿Qué has comido? owo</a>
+                </div>
+                <div class="centro-cambiante">
+                    <h2>Un centro muy minimalista</h2>
+                    <p>
+                        Con todo este texto también super minimalista 
+                        ¿que haríamos sin el mminimalismo verdad?
+                        justo el estilo de la avena :p
+                    </p>
+                </div>
+                <div class="derecha-cambiante">
+                    <h2>¿La avena?</h2>
+                    <p>
+                        ¡Si! lo leíste bien, la avena es caracterizada por ser muy minimalista 
+                        por eso es perfecta, ¡a todos le encanta!
+                        Deberías probarla :3
+                    </p>
+                </div>
+            </div>
+            <div style="background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">¿Muy bonito verdad? :p</div>
+        </div>
+        <!-- <div>
+            <div class="w3-container w3-green">
+                <h1>W3Schools Demo</h1> 
+                <p>Resize this responsive page!</p> 
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>
+                        It is the most populous city in the United Kingdom,
+                        with a metropolitan area of over 13 million inhabitants.
+                    </p>
+                </div>
+                <div class="w3-third">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p> 
+                    <p>
+                        The Paris area is one of the largest population centers in Europe,
+                        with more than 12 million inhabitants.
+                    </p>
+                </div>
+                <div class="w3-third">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                    <p>
+                        It is the center of the Greater Tokyo Area,
+                        and the most populous metropolitan area in the world.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <hr>
         
     </body>
 </html>
